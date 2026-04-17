@@ -1,5 +1,6 @@
 ﻿import { Resend } from 'resend';
 import { buildPickingEmail } from './_email-template.js';
+import { buildPickingPdf } from './_pdf-template.js';
 
 const { ECWID_STORE_ID, ECWID_TOKEN, RESEND_API_KEY, NOTIFY_FROM, NOTIFY_TO } = process.env;
 const resend = new Resend(RESEND_API_KEY);
@@ -42,9 +43,24 @@ export default async function handler(req, res) {
       });
     }
 
+    const orderNum = order.vendorOrderNumber || order.id;
     const emailHtml = buildPickingEmail(order);
-    const subject = `🎤 Commande #${order.vendorOrderNumber || order.id} à préparer`;
-	const sendResult = await resend.emails.send({ from: NOTIFY_FROM, to: NOTIFY_TO, subject, html: emailHtml });
+    const pdfBuffer = await buildPickingPdf(order);
+    const subject = `🎤 Commande #${orderNum} à préparer`;
+
+    const sendResult = await resend.emails.send({
+      from: NOTIFY_FROM,
+      to: NOTIFY_TO,
+      subject,
+      html: emailHtml,
+      attachments: [
+        {
+          filename: `picking-${orderNum}.pdf`,
+          content: pdfBuffer.toString('base64'),
+        },
+      ],
+    });
+
     if (sendResult.error) {
       console.error('Resend error', sendResult.error);
       return res.status(200).json({ ok: false, orderId, resendError: sendResult.error });

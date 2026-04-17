@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import { buildPickingEmail } from './_email-template.js';
+import { buildPickingPdf } from './_pdf-template.js';
 
 const { ECWID_STORE_ID, ECWID_TOKEN, RESEND_API_KEY, NOTIFY_FROM, NOTIFY_TO } = process.env;
 const resend = new Resend(RESEND_API_KEY);
@@ -18,23 +19,26 @@ export default async function handler(req, res) {
     }
 
     const order = await ecwidRes.json();
+    const orderNum = order.vendorOrderNumber || order.id;
     const emailHtml = buildPickingEmail(order);
-    const subject = `🎤 [TEST] Commande #${order.vendorOrderNumber || order.id}`;
+    const pdfBuffer = await buildPickingPdf(order);
+    const subject = `🎤 [TEST] Commande #${orderNum}`;
 
     const result = await resend.emails.send({
-      from: NOTIFY_FROM, to: NOTIFY_TO, subject, html: emailHtml,
+      from: NOTIFY_FROM,
+      to: NOTIFY_TO,
+      subject,
+      html: emailHtml,
+      attachments: [
+        {
+          filename: `picking-${orderNum}.pdf`,
+          content: pdfBuffer.toString('base64'),
+        },
+      ],
     });
 
-    // Resend renvoie { data, error } — il faut checker error
     if (result.error) {
-      console.error('Resend error', result.error);
-      return res.status(500).json({
-        ok: false,
-        orderId,
-        resendError: result.error,
-        from: NOTIFY_FROM,
-        to: NOTIFY_TO,
-      });
+      return res.status(500).json({ ok: false, resendError: result.error });
     }
 
     return res.status(200).json({
@@ -43,8 +47,7 @@ export default async function handler(req, res) {
       paymentStatus: order.paymentStatus,
       fulfillmentStatus: order.fulfillmentStatus,
       resendId: result.data?.id,
-      from: NOTIFY_FROM,
-      to: NOTIFY_TO,
+      pdfBytes: pdfBuffer.length,
     });
   } catch (err) {
     return res.status(500).json({ error: String(err) });
