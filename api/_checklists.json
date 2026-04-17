@@ -1,0 +1,403 @@
+{
+  "styroflexkitd12": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-12", "items": [
+      { "text": "Styroflex 5000pF", "qty": 2 },
+      { "text": "Styroflex 1000pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitd251": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-251", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 1000pF", "qty": 1 },
+      { "text": "Styroflex 4700pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitd47": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-47", "items": [
+      { "text": "Styroflex 10,000pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitdef47": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-EF47", "items": [
+      { "text": "Styroflex 10,000pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitdm269c": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-M269c", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 270pF", "qty": 1 },
+      { "text": "Styroflex 10pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitdm49": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-M49", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 560pF", "qty": 1 },
+      { "text": "Styroflex 10pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitd47FET": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-U47 FET", "items": [
+      { "text": "Styroflex 18pF", "qty": 1 },
+      { "text": "Styroflex 33pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitd67": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-U67", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 270pF", "qty": 1 }
+    ] } ] }
+  },
+  "styroflexkitd87": {
+    "_default": { "sections": [ { "title": "StyroFlex Kit D-U87", "items": [
+      { "text": "Styroflex 220pF", "qty": 1 },
+      { "text": "Styroflex 560pF", "qty": 1 },
+      { "text": "Styroflex 470pF", "qty": 2 },
+      { "text": "Styroflex 10pF", "qty": 1 }
+    ] } ] }
+  },
+
+  "switchkit": {
+    "_default": { "sections": [ { "title": "Switch Kit (3)", "items": [
+      { "text": "Switch ON-OFF-ON (3-pos)", "qty": 1 },
+      { "text": "Switch ON-OFF (2-pos)", "qty": 2 }
+    ] } ] }
+  },
+
+  "powertransfo25VA2t": {
+    "_default": { "sections": [ { "title": "Toroidal Power Transformer", "items": [
+      { "text": "Transformateur toroïdal 25VA 2×", "qty": 1 },
+      { "text": "Mounting hardware", "qty": 1 },
+      { "text": "Vis M6 × 120 mm", "qty": 1 }
+    ] } ] }
+  },
+
+  "d12microphonebody": {
+    "_default": { "sections": [ { "title": "Body D-12", "items": [
+      { "text": "Body D-12 complet (headbasket, tube, base, capsule holder, 7-pin XLR)", "qty": 1 },
+      { "text": "Vis M2.0 × 4 mm", "qty": 4 },
+      { "text": "Vis M2.0 × 10 mm", "qty": 1 }
+    ] } ] },
+    "PCB kit=D-12 PCB Kit": { "sections": [ { "title": "PCB kit — D-12", "items": [
+      { "text": "TODO: contenu D-12 PCB Kit", "qty": 1 }
+    ] } ] },
+    "Tube Socket=Low Profile 9-Pin Tube Socket": { "sections": [ { "title": "Tube Socket", "items": [
+      { "text": "Low Profile 9-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-12": { "sections": [ { "title": "StyroFlex Kit D-12", "items": [
+      { "text": "Styroflex 5000pF", "qty": 2 },
+      { "text": "Styroflex 1000pF", "qty": 1 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] },
+    "Wooden box=Wooden box": { "sections": [ { "title": "Wooden box", "items": [
+      { "text": "Wooden box", "qty": 1 }
+    ] } ] },
+    "Fully assembled, PSU=Fully assembled PSU": { "sections": [ { "title": "PSU assemblé", "items": [
+      { "text": "TODO: PSU complet assemblé", "qty": 1 }
+    ] } ] },
+    "Component Kit=D-12 Component Kit": { "sections": [ { "title": "Component Kit D-12", "items": [
+      { "text": "TODO: contenu D-12 Component Kit (avec NOS PiO cap)", "qty": 1 }
+    ] } ] }
+  },
+
+  "d251microphonebody": {
+    "_default": { "sections": [ { "title": "Body D-251", "items": [
+      { "text": "Body D-251 complet", "qty": 1 },
+      { "text": "Vis M2.0 × 4 mm", "qty": 4 },
+      { "text": "Vis M2.0 × 10 mm", "qty": 1 }
+    ] } ] },
+    "PCB kit=D-251 PCB Kit": { "sections": [ { "title": "PCB kit — D-251", "items": [
+      { "text": "TODO: contenu D-251 PCB Kit", "qty": 1 }
+    ] } ] },
+    "Tube Socket=Low Profile 9-Pin Tube Socket": { "sections": [ { "title": "Tube Socket", "items": [
+      { "text": "Low Profile 9-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-251": { "sections": [ { "title": "StyroFlex Kit D-251", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 1000pF", "qty": 1 },
+      { "text": "Styroflex 4700pF", "qty": 1 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] },
+    "Wooden box=Wooden box": { "sections": [ { "title": "Wooden box", "items": [
+      { "text": "Wooden box", "qty": 1 }
+    ] } ] },
+    "PSU=PSU": { "sections": [ { "title": "PSU", "items": [
+      { "text": "TODO: PSU D-251", "qty": 1 }
+    ] } ] }
+  },
+
+  "m269cmicrophonebody": {
+    "_default": { "sections": [ { "title": "Body D-M269c", "items": [
+      { "text": "Body D-M269c complet", "qty": 1 },
+      { "text": "Standoff tête — VÉRIFIER 3×", "qty": 3 },
+      { "text": "Vis M2.0 × 4 mm", "qty": 4 },
+      { "text": "Vis M2.0 × 6 mm", "qty": 4 }
+    ] } ] },
+    "PCB kit=D-M269c PCB Kit": { "sections": [ { "title": "PCB kit — D-M269c", "items": [
+      { "text": "TODO: contenu D-M269c PCB Kit", "qty": 1 }
+    ] } ] },
+    "BV12 Adaptor PCB=BV12 Classic Serie Adaptor PCB": { "sections": [ { "title": "BV12 Adaptor PCB", "items": [
+      { "text": "BV12 Classic Serie Adaptor PCB", "qty": 1 }
+    ] } ] },
+    "Switch Kit=Switch Kit (3)": { "sections": [ { "title": "Switch Kit (3)", "items": [
+      { "text": "Switch ON-OFF-ON (3-pos)", "qty": 1 },
+      { "text": "Switch ON-OFF (2-pos)", "qty": 2 }
+    ] } ] },
+    "Tube Socket=Low Profile 9-Pin Tube Socket": { "sections": [ { "title": "Tube Socket", "items": [
+      { "text": "Low Profile 9-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-M269c": { "sections": [ { "title": "StyroFlex Kit D-M269c", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 270pF", "qty": 1 },
+      { "text": "Styroflex 10pF", "qty": 1 }
+    ] } ] },
+    "Shock Mounth=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] }
+  },
+
+  "d67microphonebody": {
+    "_default": { "sections": [ { "title": "Body D-67", "items": [
+      { "text": "Body D-67 complet", "qty": 1 },
+      { "text": "Standoff tête — VÉRIFIER 3×", "qty": 3 },
+      { "text": "Vis M2.0 × 4 mm", "qty": 4 },
+      { "text": "Vis M2.0 × 6 mm", "qty": 4 }
+    ] } ] },
+    "PCB kit=D-U67 PCB Kit": { "sections": [ { "title": "PCB kit — D-U67", "items": [
+      { "text": "TODO: contenu D-U67 PCB Kit", "qty": 1 }
+    ] } ] },
+    "BV12 Adaptor PCB=BV12 Classic Serie Adaptor PCB": { "sections": [ { "title": "BV12 Adaptor PCB", "items": [
+      { "text": "BV12 Classic Serie Adaptor PCB", "qty": 1 }
+    ] } ] },
+    "Switch Kit=Switch Kit (3)": { "sections": [ { "title": "Switch Kit (3)", "items": [
+      { "text": "Switch ON-OFF-ON (3-pos)", "qty": 1 },
+      { "text": "Switch ON-OFF (2-pos)", "qty": 2 }
+    ] } ] },
+    "Tube Socket=Low Profile 9-Pin Tube Socket": { "sections": [ { "title": "Tube Socket", "items": [
+      { "text": "Low Profile 9-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-U67": { "sections": [ { "title": "StyroFlex Kit D-U67", "items": [
+      { "text": "Styroflex 100pF", "qty": 1 },
+      { "text": "Styroflex 270pF", "qty": 1 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] }
+  },
+
+  "d87microphonebody": {
+    "_default": { "sections": [ { "title": "Body D-87", "items": [
+      { "text": "Body D-87 complet", "qty": 1 },
+      { "text": "Standoff tête — VÉRIFIER 3×", "qty": 3 },
+      { "text": "Vis M2.0 × 4 mm", "qty": 4 },
+      { "text": "Vis M2.0 × 6 mm", "qty": 4 }
+    ] } ] },
+    "PCB kit=D-U87L Large PCB (Green)": { "sections": [ { "title": "PCB kit — D-U87L Large (Green)", "items": [
+      { "text": "D-U87L Large PCB (Green)", "qty": 1 }
+    ] } ] },
+    "PCB kit=D-U87M PCB (Blue)": { "sections": [ { "title": "PCB kit — D-U87M (Blue)", "items": [
+      { "text": "D-U87M PCB (Blue)", "qty": 1 }
+    ] } ] },
+    "Switch Kit=Switch PCB (Blue)  + Switch Kit (3)": { "sections": [ { "title": "Switch Kit (3) + PCB Blue", "items": [
+      { "text": "Switch PCB (Blue)", "qty": 1 },
+      { "text": "Switch ON-OFF-ON (3-pos)", "qty": 1 },
+      { "text": "Switch ON-OFF (2-pos)", "qty": 2 }
+    ] } ] },
+    "Switch Kit=Switch PCB (Green)  + Switch Kit (3)": { "sections": [ { "title": "Switch Kit (3) + PCB Green", "items": [
+      { "text": "Switch PCB (Green)", "qty": 1 },
+      { "text": "Switch ON-OFF-ON (3-pos)", "qty": 1 },
+      { "text": "Switch ON-OFF (2-pos)", "qty": 2 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-U87": { "sections": [ { "title": "StyroFlex Kit D-U87", "items": [
+      { "text": "Styroflex 220pF", "qty": 1 },
+      { "text": "Styroflex 560pF", "qty": 1 },
+      { "text": "Styroflex 470pF", "qty": 2 },
+      { "text": "Styroflex 10pF", "qty": 1 }
+    ] } ] },
+    "Component Kit=D-87 Component Kit": { "sections": [ { "title": "Component Kit D-87", "items": [
+      { "text": "TODO: contenu D-87 Component Kit", "qty": 1 }
+    ] } ] }
+  },
+
+  "preniumU47U48bodykit": {
+    "_default": { "sections": [ { "title": "Premium U47/U48 Body — base", "items": [
+      { "text": "TODO: body premium U47/U48 + visserie de base", "qty": 1 }
+    ] } ] },
+    "Model=U47": { "sections": [ { "title": "Modèle U47", "items": [
+      { "text": "TODO: éléments spécifiques U47", "qty": 1 }
+    ] } ] },
+    "Model=U48": { "sections": [ { "title": "Modèle U48", "items": [
+      { "text": "TODO: éléments spécifiques U48", "qty": 1 }
+    ] } ] },
+    "Capsule Holder=M7": { "sections": [ { "title": "Capsule Holder M7", "items": [
+      { "text": "Capsule Holder M7", "qty": 1 }
+    ] } ] },
+    "Capsule Holder=K47": { "sections": [ { "title": "Capsule Holder K47", "items": [
+      { "text": "Capsule Holder K47", "qty": 1 }
+    ] } ] },
+    "Tube Socket Configuration=Octal (8-pin)": { "sections": [ { "title": "Tube Socket Octal", "items": [
+      { "text": "Tube Socket Octal 8-pin", "qty": 1 }
+    ] } ] },
+    "Tube Socket Configuration=Noval (9-pin)": { "sections": [ { "title": "Tube Socket Noval", "items": [
+      { "text": "Tube Socket Noval 9-pin", "qty": 1 }
+    ] } ] },
+    "Tube Socket Configuration=Dual (7-pin)": { "sections": [ { "title": "Tube Socket Dual", "items": [
+      { "text": "Tube Socket Dual 7-pin", "qty": 1 }
+    ] } ] },
+    "Circuit Framework=PCB": { "sections": [ { "title": "Circuit — PCB", "items": [
+      { "text": "TODO: PCB circuit", "qty": 1 }
+    ] } ] },
+    "Circuit Framework=Metal palte + resistor board": { "sections": [ { "title": "Circuit — Metal plate + resistor board", "items": [
+      { "text": "TODO: metal plate + resistor board", "qty": 1 }
+    ] } ] },
+    "Circuit Framework=Metal plate + resistor PCB": { "sections": [ { "title": "Circuit — Metal plate + resistor PCB", "items": [
+      { "text": "TODO: metal plate + resistor PCB", "qty": 1 }
+    ] } ] },
+    "Binder M25=09-0042-00-07": { "sections": [ { "title": "Binder M25", "items": [
+      { "text": "Binder M25 (09-0042-00-07)", "qty": 1 }
+    ] } ] }
+  },
+
+  "d47bodykit": {
+    "_default": { "sections": [ { "title": "Body D-47 — base", "items": [
+      { "text": "TODO: body D-47 + visserie de base", "qty": 1 }
+    ] } ] },
+    "PCB kit=D-47 PCB Kit": { "sections": [ { "title": "PCB kit — D-47", "items": [
+      { "text": "TODO: contenu D-47 PCB Kit", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-47": { "sections": [ { "title": "StyroFlex Kit D-47", "items": [
+      { "text": "Styroflex 10,000pF", "qty": 1 }
+    ] } ] },
+    "Pattern Switching=48V Relay for Pattern Switching": { "sections": [ { "title": "48V Relay Pattern Switching", "items": [
+      { "text": "48V Relay for Pattern Switching", "qty": 1 }
+    ] } ] },
+    "Capsule Mounting=K47 (default)": { "sections": [ { "title": "Capsule Mounting K47", "items": [
+      { "text": "K47 Capsule Mounting", "qty": 1 }
+    ] } ] },
+    "Capsule Mounting=M7 Capsule holder": { "sections": [ { "title": "Capsule Mounting M7", "items": [
+      { "text": "M7 Capsule Holder", "qty": 1 }
+    ] } ] },
+    "Tube Socket=Dual Low Profile 7-Pin": { "sections": [ { "title": "Tube Socket Dual 7-pin", "items": [
+      { "text": "Dual Low Profile 7-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "Wooden Case=D-47 Wooden Microphone Case": { "sections": [ { "title": "Wooden Case D-47", "items": [
+      { "text": "D-47 Wooden Microphone Case", "qty": 1 }
+    ] } ] },
+    "Audio Transformer=BV08 Transformer": { "sections": [ { "title": "Audio Transformer BV08", "items": [
+      { "text": "BV08 Transformer", "qty": 1 }
+    ] } ] },
+    "D7 Capsule=D7 Capsule": { "sections": [ { "title": "D7 Capsule", "items": [
+      { "text": "D7 Capsule", "qty": 1 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] }
+  },
+
+  "def47bodykit": {
+    "_default": { "sections": [ { "title": "Body D-EF47 — base", "items": [
+      { "text": "TODO: body D-EF47 + visserie de base", "qty": 1 }
+    ] } ] },
+    "PCB kit=D-EF47 PCB Kit": { "sections": [ { "title": "PCB kit — D-EF47", "items": [
+      { "text": "TODO: contenu D-EF47 PCB Kit", "qty": 1 }
+    ] } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-47": { "sections": [ { "title": "StyroFlex Kit D-47", "items": [
+      { "text": "Styroflex 10,000pF", "qty": 1 }
+    ] } ] },
+    "Pattern Switching=48V Relay for Pattern Switching": { "sections": [ { "title": "48V Relay Pattern Switching", "items": [
+      { "text": "48V Relay for Pattern Switching", "qty": 1 }
+    ] } ] },
+    "Capsule Mounting=K47 (default)": { "sections": [ { "title": "Capsule Mounting K47", "items": [
+      { "text": "K47 Capsule Mounting", "qty": 1 }
+    ] } ] },
+    "Capsule Mounting=M7 Capsule holder": { "sections": [ { "title": "Capsule Mounting M7", "items": [
+      { "text": "M7 Capsule Holder", "qty": 1 }
+    ] } ] },
+    "Tube Socket=Low Profile 9-Pin": { "sections": [ { "title": "Tube Socket 9-pin", "items": [
+      { "text": "Low Profile 9-Pin Tube Socket", "qty": 1 }
+    ] } ] },
+    "Wooden Case=D-47 Wooden Microphone Case": { "sections": [ { "title": "Wooden Case D-47", "items": [
+      { "text": "D-47 Wooden Microphone Case", "qty": 1 }
+    ] } ] },
+    "Audio Transformer=BV08 Transformer": { "sections": [ { "title": "Audio Transformer BV08", "items": [
+      { "text": "BV08 Transformer", "qty": 1 }
+    ] } ] },
+    "D7 Capsule=D7 Capsule": { "sections": [ { "title": "D7 Capsule", "items": [
+      { "text": "D7 Capsule", "qty": 1 }
+    ] } ] },
+    "Shock Mount=Shock Mount": { "sections": [ { "title": "Shock Mount", "items": [
+      { "text": "Shock Mount", "qty": 1 }
+    ] } ] }
+  },
+
+  "u47fetmicrophonekit": {
+    "_default": { "sections": [
+      {
+        "title": "Châssis & mécanique",
+        "items": [
+          { "text": "Body U47 FET", "qty": 1 },
+          { "text": "Ajuster poignée de body U47 FET", "qty": 1 },
+          { "text": "Standoff kit", "qty": 1, "subItems": [
+            { "text": "Standoff 16 mm", "qty": 3 },
+            { "text": "Standoff 25 mm", "qty": 3 },
+            { "text": "Lock washer M2.5", "qty": 6 },
+            { "text": "Vis M2.5 PAN", "qty": 3 }
+          ]}
+        ]
+      },
+      {
+        "title": "Câblage & finition",
+        "items": [
+          { "text": "Fil silicone", "qty": 1 },
+          { "text": "Gaine thermorétractable (Heat Shrink)", "qty": 1 }
+        ]
+      }
+    ] },
+    "Capsule=D7 Capsule .. Promo": { "sections": [ {
+      "title": "Capsule & montage",
+      "items": [
+        { "text": "Capsule D7", "qty": 1 },
+        { "text": "Support capsule D7 — 58 mm", "qty": 1 },
+        { "text": "Sac plastique de protection pour capsule", "qty": 1 },
+        { "text": "Gants nitrile", "qty": 1 }
+      ]
+    } ] },
+    "Transformer=09331 Transformer .. Promo": { "sections": [ {
+      "title": "Transformateur & fixation",
+      "items": [
+        { "text": "Transformateur BV11 (09331)", "qty": 1 },
+        { "text": "PCB transformateur", "qty": 1 },
+        { "text": "Vis M2 × 25 mm", "qty": 2 },
+        { "text": "Installer le BV11 sur le PCB", "qty": 1 }
+      ]
+    } ] },
+    "PCB Kit=D-U47FET Round": { "sections": [ {
+      "title": "PCB principale",
+      "items": [
+        { "text": "PCB U47fet Round", "qty": 1 },
+        { "text": "Header angle droit", "qty": 4 },
+        { "text": "Switch", "qty": 2 }
+      ]
+    } ] },
+    "Component Kit=U47FET Component Kit": { "sections": [ {
+      "title": "Kit composants U47 FET",
+      "items": [
+        { "text": "Kit composants U47 FET (voir BOM)", "qty": 1 }
+      ]
+    } ] },
+    "StyroFlex Capacitor Kit=StyroFlex Capacitor Kit for D-U47fet": { "sections": [ {
+      "title": "StyroFlex Kit D-U47 FET",
+      "items": [
+        { "text": "Styroflex 18pF", "qty": 1 },
+        { "text": "Styroflex 33pF", "qty": 1 }
+      ]
+    } ] }
+  }
+}
