@@ -74,7 +74,7 @@
 
   "d12microphonebody": {
     "_default": { "sections": [ { "title": "Body D-12", "items": [
-      { "text": "Body D-12 complet (headbasket, tube, base, capsule holder, 7-pin XLR)", "qty": 1 },
+      { "text": "Body D-12 complet", "qty": 1 },
       { "text": "Vis M2.0 × 4 mm", "qty": 4 },
       { "text": "Vis M2.0 × 10 mm", "qty": 1 }
     ] } ] },

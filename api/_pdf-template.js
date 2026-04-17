@@ -51,10 +51,6 @@ export function buildPickingPdf(order) {
       doc.strokeColor('#0a0806').lineWidth(2).moveTo(60, doc.y).lineTo(552, doc.y).stroke();
       doc.moveDown(0.8);
 
-      if (orderComments) {
-        doc.fontSize(11).font('Helvetica-Oblique').fillColor('#c8a86a').text(`Note: ${orderComments}`);
-        doc.moveDown(0.8);
-      }
 
       doc.fontSize(14).font('Helvetica-Bold').fillColor('#0a0806').text('À PICKER');
       doc.strokeColor('#ccc').lineWidth(1).moveTo(60, doc.y + 2).lineTo(552, doc.y + 2).stroke();
