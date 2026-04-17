@@ -118,7 +118,8 @@ export function buildPickingPdf(order) {
         doc.moveDown(1);
       });
 
-      } catch (err) {
+      doc.end();
+    } catch (err) {
       reject(err);
     }
   });
