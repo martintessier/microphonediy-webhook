@@ -118,41 +118,7 @@ export function buildPickingPdf(order) {
         doc.moveDown(1);
       });
 
-      doc.moveDown(0.5);
-
-      // --- Footer totaux
-      const itemsTotal = Number(order.subtotal || 0).toFixed(2);
-      const shipCost = Number(order.shippingOption?.shippingRate || 0).toFixed(2);
-      const total = Number(order.total || 0).toFixed(2);
-      const currency = order.currency || 'USD';
-
-      doc
-        .strokeColor('#0a0806')
-        .lineWidth(2)
-        .moveTo(60, doc.y)
-        .lineTo(552, doc.y)
-        .stroke();
-      doc.moveDown(0.4);
-
-      const totalLine = (label, value, bold = false) => {
-        const y = doc.y;
-        doc
-          .fontSize(10)
-          .font(bold ? 'Helvetica-Bold' : 'Helvetica')
-          .fillColor('#222')
-          .text(label, 60, y, { width: 400 });
-        doc
-          .font(bold ? 'Helvetica-Bold' : 'Helvetica')
-          .text(`$${value} ${currency}`, 60, y, { width: 492, align: 'right' });
-      };
-
-      totalLine('Items', itemsTotal);
-      totalLine('Shipping', shipCost);
-      doc.moveDown(0.2);
-      totalLine('Total', total, true);
-
-      doc.end();
-    } catch (err) {
+      } catch (err) {
       reject(err);
     }
   });
