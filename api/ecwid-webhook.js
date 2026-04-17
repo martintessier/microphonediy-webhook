@@ -44,8 +44,12 @@ export default async function handler(req, res) {
 
     const emailHtml = buildPickingEmail(order);
     const subject = `🎤 Commande #${order.vendorOrderNumber || order.id} à préparer`;
-    await resend.emails.send({ from: NOTIFY_FROM, to: NOTIFY_TO, subject, html: emailHtml });
-    return res.status(200).json({ ok: true, orderId, sent: true });
+	const sendResult = await resend.emails.send({ from: NOTIFY_FROM, to: NOTIFY_TO, subject, html: emailHtml });
+    if (sendResult.error) {
+      console.error('Resend error', sendResult.error);
+      return res.status(200).json({ ok: false, orderId, resendError: sendResult.error });
+    }
+    return res.status(200).json({ ok: true, orderId, sent: true, resendId: sendResult.data?.id });
   } catch (err) {
     console.error('Webhook handler error', err);
     return res.status(200).json({ ok: false, error: String(err) });

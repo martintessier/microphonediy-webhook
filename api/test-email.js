@@ -24,12 +24,27 @@ export default async function handler(req, res) {
     const result = await resend.emails.send({
       from: NOTIFY_FROM, to: NOTIFY_TO, subject, html: emailHtml,
     });
+
+    // Resend renvoie { data, error } — il faut checker error
+    if (result.error) {
+      console.error('Resend error', result.error);
+      return res.status(500).json({
+        ok: false,
+        orderId,
+        resendError: result.error,
+        from: NOTIFY_FROM,
+        to: NOTIFY_TO,
+      });
+    }
+
     return res.status(200).json({
       ok: true,
       orderId,
       paymentStatus: order.paymentStatus,
       fulfillmentStatus: order.fulfillmentStatus,
       resendId: result.data?.id,
+      from: NOTIFY_FROM,
+      to: NOTIFY_TO,
     });
   } catch (err) {
     return res.status(500).json({ error: String(err) });
