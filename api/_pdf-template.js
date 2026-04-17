@@ -5,7 +5,7 @@ export function buildPickingPdf(order) {
     try {
       const doc = new PDFDocument({
         size: 'LETTER',
-        margins: { top: 50, bottom: 50, left: 60, right: 60 },
+        margins: { top: 60, bottom: 60, left: 60, right: 60 },
       });
 
       const chunks = [];
@@ -14,22 +14,28 @@ export function buildPickingPdf(order) {
       doc.on('error', reject);
 
       const orderNum = order.vendorOrderNumber || order.id;
-      const date = new Date(order.createDate || Date.now()).toLocaleString('fr-CA', {
-        dateStyle: 'long',
-        timeStyle: 'short',
-      });
+      const customerName = order.shippingPerson?.name || order.billingPerson?.name || '—';
+      const orderComments = order.orderComments || '';
 
-      // --- Header
+      // --- Header : numéro de commande en gros
+      doc
+        .fontSize(32)
+        .font('Helvetica-Bold')
+        .fillColor('#0a0806')
+        .text(`Commande #${orderNum}`);
+
+      doc.moveDown(0.2);
+
+      // --- Nom du client en gros juste en dessous
       doc
         .fontSize(22)
-        .font('Helvetica-Bold')
-        .text(`Commande #${orderNum}`, { continued: false });
-      doc
-        .fontSize(11)
         .font('Helvetica')
-        .fillColor('#666')
-        .text(date);
+        .fillColor('#222')
+        .text(customerName);
+
       doc.moveDown(0.5);
+
+      // Ligne de séparation
       doc
         .strokeColor('#0a0806')
         .lineWidth(2)
@@ -38,36 +44,15 @@ export function buildPickingPdf(order) {
         .stroke();
       doc.moveDown(0.8);
 
-      // --- Infos client / expédition
-      const s = order.shippingPerson || {};
-      const shipTo = [
-        s.name,
-        s.street,
-        [s.city, s.stateOrProvinceCode, s.postalCode].filter(Boolean).join(' '),
-        s.countryName,
-      ].filter(Boolean).join(', ');
-
-      const shippingMethod = order.shippingOption?.shippingMethodName || '—';
-      const paymentMethod = order.paymentMethod || '—';
-      const orderComments = order.orderComments || '';
-
-      doc.fillColor('#222').fontSize(10);
-      const infoLine = (label, value) => {
-        doc.font('Helvetica').fillColor('#888').text(label, { continued: true, width: 80 });
-        doc.font('Helvetica-Bold').fillColor('#222').text(`  ${value || '—'}`);
-      };
-
-      infoLine('Client', s.name || '—');
-      infoLine('Ship to', shipTo);
-      infoLine('Via', shippingMethod);
-      infoLine('Paiement', paymentMethod);
+      // Note client si présente
       if (orderComments) {
-        doc.moveDown(0.3);
-        doc.font('Helvetica').fillColor('#888').text('Note client', { continued: false });
-        doc.font('Helvetica-Oblique').fillColor('#c8a86a').text(orderComments);
+        doc
+          .fontSize(11)
+          .font('Helvetica-Oblique')
+          .fillColor('#c8a86a')
+          .text(`Note: ${orderComments}`);
+        doc.moveDown(0.8);
       }
-
-      doc.moveDown(1);
 
       // --- Section À PICKER
       doc
@@ -94,49 +79,46 @@ export function buildPickingPdf(order) {
           return v && v.toLowerCase() !== 'none';
         });
 
-        // Checkbox + qty + nom
         const yStart = doc.y;
         doc
-          .rect(60, yStart + 2, 12, 12)
+          .rect(60, yStart + 2, 14, 14)
           .strokeColor('#222')
           .lineWidth(1.2)
           .stroke();
 
         doc
-          .fontSize(13)
+          .fontSize(14)
           .font('Helvetica-Bold')
           .fillColor('#222')
-          .text(`${qty}×  ${name}`, 82, yStart, { width: 470 });
+          .text(`${qty}×  ${name}`, 84, yStart, { width: 468 });
 
-        // SKU discret
         if (sku) {
           doc
             .fontSize(9)
             .font('Helvetica')
             .fillColor('#888')
-            .text(`SKU: ${sku}`, 82);
+            .text(`SKU: ${sku}`, 84);
         }
 
-        // Sous-options, chacune avec sa propre checkbox
         opts.forEach((o) => {
-          const yOpt = doc.y + 2;
+          const yOpt = doc.y + 3;
           doc
             .rect(100, yOpt + 2, 10, 10)
             .strokeColor('#444')
             .lineWidth(1)
             .stroke();
           doc
-            .fontSize(10)
+            .fontSize(11)
             .font('Helvetica')
             .fillColor('#444')
             .text(`${o.name}: `, 118, yOpt, { continued: true });
           doc.font('Helvetica-Bold').fillColor('#222').text(o.value);
         });
 
-        doc.moveDown(0.8);
+        doc.moveDown(1);
       });
 
-      doc.moveDown(1);
+      doc.moveDown(0.5);
 
       // --- Footer totaux
       const itemsTotal = Number(order.subtotal || 0).toFixed(2);
